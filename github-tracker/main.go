@@ -21,7 +21,7 @@ func postHandler(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	fmt.Printf(string(body))
+	fmt.Println(string(body))
 }
 
 func insertGitHubWebHook(ctx context.Context, repo repository.Commit, webhook models.WebhookPayload, BODY string, createdAt time.Time) {
